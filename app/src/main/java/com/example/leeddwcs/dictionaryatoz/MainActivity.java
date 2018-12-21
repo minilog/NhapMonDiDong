@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public static final int ACTION_MANAGE_OVERLAY_PERMISSION_REQUEST_CODE = 5469;
     public static Data dtAnhViet;
+    public static IrregularVerbs dtBatQuyTac;
     private AutoCompleteTextView txtSearch;
     private TextView btnDichVanBan;
     private TextView btnTuYeuThich;
@@ -37,7 +38,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView btnCuaSoTraNhanh;
     private TextView btnDichHinhAnh;
     private TextView btnGoiTuVung;
-    private TextView btnCaiDat;
     public static Intent mainIntent;
 
     @Override
@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void init() {
         dtAnhViet = new Data(this, "data/anh_viet/anhviet.txt", "data/anh_viet/anhviet_nghia.txt", "anhviet_favorite.txt", "anhviet_history.txt");
+        dtBatQuyTac = new IrregularVerbs(this, "data/irregular_verbs/v1.txt", "data/irregular_verbs/v2.txt", "data/irregular_verbs/v3.txt", "data/irregular_verbs/bqtNghia.txt");
         initControl();
     }
 
@@ -63,7 +64,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnCuaSoTraNhanh = (TextView) findViewById(R.id.btnCuaSoTraNhanh);
         btnDichHinhAnh = (TextView) findViewById(R.id.btnDichHinhAnh);
         btnGoiTuVung = (TextView) findViewById(R.id.btnGoiTuVung);
-        btnCaiDat = (TextView) findViewById(R.id.btnCaiDat);
 
         txtSearch.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -74,17 +74,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         });
-                txtSearch.setOnKeyListener(new View.OnKeyListener() {
-                    @Override
-                    public boolean onKey(View v, int keyCode, KeyEvent event) {
-                        if (keyCode == KeyEvent.KEYCODE_ENTER && event.getAction() == KeyEvent.ACTION_DOWN) {
-                            dtAnhViet.AddHistoryWord(txtSearch.getText().toString());
-                            Intent intent = new Intent(MainActivity.this, DichActivity.class);
-                            intent.putExtra("word", txtSearch.getText().toString());
-                            startActivity(intent);
-                            return true;
-                        }
-                        return false;
+
+        txtSearch.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (keyCode == KeyEvent.KEYCODE_ENTER && event.getAction() == KeyEvent.ACTION_DOWN) {
+                    dtAnhViet.AddHistoryWord(txtSearch.getText().toString());
+                    Intent intent = new Intent(MainActivity.this, DichActivity.class);
+                    intent.putExtra("word", txtSearch.getText().toString());
+                    startActivity(intent);
+                    return true;
+                }
+                return false;
             }
         });
 
@@ -120,7 +121,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnCuaSoTraNhanh.setOnClickListener(this);
         btnDichHinhAnh.setOnClickListener(this);
         btnGoiTuVung.setOnClickListener(this);
-        btnCaiDat.setOnClickListener(this);
 
         txtSearch.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -164,11 +164,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 this.startActivity(intent);
                 break;
             case R.id.btnGoiTuVung:
-                intent = new Intent(this, GoiTuVungActivity.class);
-                this.startActivity(intent);
-                break;
-            case R.id.btnCaiDat:
-                intent = new Intent(this, CaiDatActivity.class);
+                intent = new Intent(this, DongTuBatQuyTacActivity.class);
                 this.startActivity(intent);
                 break;
         }

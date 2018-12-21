@@ -34,13 +34,11 @@
         <activity android:name=".TuYeuThichActivity" />
         <activity android:name=".TuDaTraActivity" />
         <activity android:name=".DichHinhAnhActivity" />
-        <activity android:name=".GoiTuVungActivity" />
-        <activity android:name=".CaiDatActivity" />
+        <activity android:name=".DongTuBatQuyTacActivity" />
         <activity android:name=".DichActivity" />
-
         <service android:name=".CuaSoTraNhanhSevice" />
-
-        <activity android:name=".StudyActivity"></activity>
+        <activity android:name=".StudyActivity" />
+        <activity android:name=".DongTuBatQuyTacDetailActivity"></activity>
     </application>
 
 </manifest>

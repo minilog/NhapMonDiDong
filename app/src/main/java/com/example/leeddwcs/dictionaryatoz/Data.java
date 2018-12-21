@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 public class Data{
     //Properties
+    private static final int MAX_HISTORY_WORD = 50;
     private Context context;
     private ArrayList<String> word;
     private ArrayList<String> posBegin;
@@ -255,6 +256,12 @@ public class Data{
             {
                 history.remove(word);
             }
+
+            if(history.size() == MAX_HISTORY_WORD)
+            {
+                history.remove(MAX_HISTORY_WORD-1);
+            }
+
             history.add(0, word);
             String strFavorite = "";
             for(String line : history)
@@ -290,5 +297,21 @@ public class Data{
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public String GetShortMean(String w)
+    {
+        int indexWord;
+        String shortMean;
+        indexWord = getWord().indexOf(w);
+        if(indexWord >= 0)
+        {
+            int index = Integer.parseInt(getPosBegin().get(indexWord));
+            shortMean = getMean().get(index + 2);
+            shortMean = shortMean.replace("- ", "");
+            return shortMean;
+        }
+        else
+            return "Không tìm thấy từ trong cơ sở dữ liệu";
     }
 }

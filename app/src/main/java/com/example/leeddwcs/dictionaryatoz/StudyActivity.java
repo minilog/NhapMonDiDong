@@ -27,8 +27,8 @@ public class StudyActivity extends AppCompatActivity {
     Button btnSpeak;
     Button btnNext;
     Button btnPrevious;
+    Button btnGoto;
     String word;
-    String mean;
     int index;
     DichVanBan dichVanBan;
 
@@ -54,6 +54,7 @@ public class StudyActivity extends AppCompatActivity {
         btnSpeak = (Button)findViewById(R.id.btnSpeak);
         btnNext = (Button)findViewById(R.id.btnNext);
         btnPrevious = (Button)findViewById(R.id.btnPrevious);
+        btnGoto = (Button)findViewById(R.id.btnGoto);
         toSpeech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
@@ -93,6 +94,15 @@ public class StudyActivity extends AppCompatActivity {
             }
         });
 
+        btnGoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StudyActivity.this, DichActivity.class);
+                intent.putExtra("word", word);
+                startActivity(intent);
+            }
+        });
+
         LoadData();
     }
 
@@ -107,12 +117,7 @@ public class StudyActivity extends AppCompatActivity {
                 toSpeech.speak(word, TextToSpeech.QUEUE_FLUSH, null);
             }
         });
-        try {
-            dichVanBan = new DichVanBan(StudyActivity.this);
-            dichVanBan.execute(word);
-        } catch (Exception e) {
-            Log.d("exception", e.toString());
-        }
+        txtOutput.setText(MainActivity.dtAnhViet.GetShortMean(word));
     }
 
     private void LoadImage()

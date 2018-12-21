@@ -3,6 +3,8 @@ package com.example.leeddwcs.dictionaryatoz;
 import android.Manifest;
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -21,6 +23,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.util.Locale;
@@ -28,14 +31,18 @@ import java.util.Locale;
 public class DichHinhAnhActivity extends AppCompatActivity {
 
     private int MY_CAMERA_REQUEST_CODE = 100;
-    private int REQUEST_ID_READ_WRITE_PERMISSION = 200;
+    private int PICK_IMAGE = 200;
+    private int REQUEST_ID_READ_WRITE_PERMISSION = 300;
+    private int REQUEST_CODE = 400;
+
     ImageView ivInput;
     Button btnBack;
     Button btnCamera;
+    Button btnUpload;
     Button btnTranslate;
     EditText txtInput;
     EditText txtOutput;
-    int REQUEST_CODE = 123;
+
     File output = null;
     DichVanBan dichVanBan;
     ProgressDialog loadingBar;
@@ -43,12 +50,32 @@ public class DichHinhAnhActivity extends AppCompatActivity {
     TextToSpeech toSpeechOutput;
     Button btnSpeakInput;
     Button btnSpeakOutput;
-
+    Button btnCopyInput;
+    Button btnCopyOutput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dich_hinh_anh);
+
+        if (android.os.Build.VERSION.SDK_INT >= 23) {
+
+            int readPermission = ActivityCompat.checkSelfPermission(DichHinhAnhActivity.this,
+                    Manifest.permission.READ_EXTERNAL_STORAGE);
+            int writePermission = ActivityCompat.checkSelfPermission(DichHinhAnhActivity.this,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+            if (writePermission != PackageManager.PERMISSION_GRANTED ||
+                    readPermission != PackageManager.PERMISSION_GRANTED) {
+
+                // Nếu không có quyền, cần nhắc người dùng cho phép.
+                DichHinhAnhActivity.this.requestPermissions(
+                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                                Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_ID_READ_WRITE_PERMISSION
+                );
+            }
+        }
+
         initControl();
     }
 
@@ -57,6 +84,7 @@ public class DichHinhAnhActivity extends AppCompatActivity {
         ivInput = (ImageView)findViewById(R.id.ivInput);
         btnBack = (Button)findViewById(R.id.btnBack);
         btnCamera = (Button)findViewById(R.id.btnCamera);
+        btnUpload = (Button)findViewById(R.id.btnUpload);
         txtInput = (EditText)findViewById(R.id.txtInput);
         txtOutput = (EditText)findViewById(R.id.txtOutput);
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +96,8 @@ public class DichHinhAnhActivity extends AppCompatActivity {
         btnTranslate = (Button)findViewById(R.id.btnTranslate);
         btnSpeakInput = (Button)findViewById(R.id.btnSpeakInput);
         btnSpeakOutput = (Button)findViewById(R.id.btnSpeakOutput);
+        btnCopyInput = (Button)findViewById(R.id.btnCopyInput);
+        btnCopyOutput = (Button)findViewById(R.id.btnCopyOutput);
 
         loadingBar = new ProgressDialog(this);
         loadingBar.setTitle("Thông báo");
@@ -77,23 +107,7 @@ public class DichHinhAnhActivity extends AppCompatActivity {
         btnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (android.os.Build.VERSION.SDK_INT >= 23) {
 
-                    int readPermission = ActivityCompat.checkSelfPermission(DichHinhAnhActivity.this,
-                            Manifest.permission.READ_EXTERNAL_STORAGE);
-                    int writePermission = ActivityCompat.checkSelfPermission(DichHinhAnhActivity.this,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE);
-
-                    if (writePermission != PackageManager.PERMISSION_GRANTED ||
-                            readPermission != PackageManager.PERMISSION_GRANTED) {
-
-                        // Nếu không có quyền, cần nhắc người dùng cho phép.
-                        DichHinhAnhActivity.this.requestPermissions(
-                                new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                                        Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_ID_READ_WRITE_PERMISSION
-                        );
-                    }
-                }
                 if (ContextCompat.checkSelfPermission(DichHinhAnhActivity.this, Manifest.permission.CAMERA)
                         != PackageManager.PERMISSION_GRANTED) {
                     ActivityCompat.requestPermissions(DichHinhAnhActivity.this, new String[]{Manifest.permission.CAMERA},
@@ -105,6 +119,14 @@ public class DichHinhAnhActivity extends AppCompatActivity {
                     i.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(output));
                     startActivityForResult(i, REQUEST_CODE);
                 }
+            }
+        });
+
+        btnUpload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+                startActivityForResult(gallery, PICK_IMAGE);
             }
         });
 
@@ -178,6 +200,25 @@ public class DichHinhAnhActivity extends AppCompatActivity {
                 toSpeechOutput.speak(txtOutput.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
+        btnCopyInput.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("textInput", txtInput.getText());
+                clipboard.setPrimaryClip(clip);
+                Toast.makeText(DichHinhAnhActivity.this, "Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnCopyOutput.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("textOutput", txtOutput.getText());
+                clipboard.setPrimaryClip(clip);
+                Toast.makeText(DichHinhAnhActivity.this, "Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -188,6 +229,16 @@ public class DichHinhAnhActivity extends AppCompatActivity {
             ivInput.setImageURI(Uri.fromFile(output));
             DichHinhAnh.verifyStoragePermissions(this);
             DichHinhAnh dichHinhAnh = new DichHinhAnh(DichHinhAnhActivity.this, output.getPath());
+            loadingBar.show();
+            dichHinhAnh.execute();
+        }
+
+        if (requestCode == PICK_IMAGE && resultCode == RESULT_OK)
+        {
+            ivInput.setImageBitmap(null);
+            ivInput.setImageURI(data.getData());
+            DichHinhAnh.verifyStoragePermissions(this);
+            DichHinhAnh dichHinhAnh = new DichHinhAnh(DichHinhAnhActivity.this, data.getData().getPath());
             loadingBar.show();
             dichHinhAnh.execute();
         }

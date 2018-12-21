@@ -67,6 +67,7 @@ public class DichActivity extends AppCompatActivity {
                 if(status != TextToSpeech.ERROR)
                 {
                     toSpeech.setLanguage(Locale.US);
+
                 }
             }
         });

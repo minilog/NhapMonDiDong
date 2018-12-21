@@ -1,6 +1,8 @@
 package com.example.leeddwcs.dictionaryatoz;
 
 import android.app.Activity;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +12,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -26,6 +29,8 @@ public class DichVanBanActivity extends AppCompatActivity {
     TextToSpeech toSpeechOutput;
     Button btnSpeakInput;
     Button btnSpeakOutput;
+    Button btnCopyInput;
+    Button btnCopyOutput;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +48,8 @@ public class DichVanBanActivity extends AppCompatActivity {
         btnTranslate = (Button)findViewById(R.id.btnTranslate);
         btnSpeakInput = (Button)findViewById(R.id.btnSpeakInput);
         btnSpeakOutput = (Button)findViewById(R.id.btnSpeakOutput);
-
+        btnCopyInput = (Button)findViewById(R.id.btnCopyInput);
+        btnCopyOutput = (Button)findViewById(R.id.btnCopyOutput);
         txtInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -124,6 +130,26 @@ public class DichVanBanActivity extends AppCompatActivity {
                 toSpeechOutput.setLanguage(new Locale("en", "US"));
                 btnOptionAV.setBackgroundResource(R.drawable.layout_background);
                 btnOptionVA.setBackgroundResource(R.drawable.content_background);
+            }
+        });
+
+        btnCopyInput.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("textInput", txtInput.getText());
+                clipboard.setPrimaryClip(clip);
+                Toast.makeText(DichVanBanActivity.this, "Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnCopyOutput.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("textOutput", txtOutput.getText());
+                clipboard.setPrimaryClip(clip);
+                Toast.makeText(DichVanBanActivity.this, "Copied", Toast.LENGTH_SHORT).show();
             }
         });
     }

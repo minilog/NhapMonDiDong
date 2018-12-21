@@ -1,14 +1,9 @@
 package com.example.leeddwcs.dictionaryatoz;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -32,7 +27,7 @@ public class TuDaTraActivity extends AppCompatActivity {
         btnBack = (Button)findViewById(R.id.btnBack);
         btnDelete = (Button)findViewById(R.id.btnDelete);
         lvWord = (ListView)findViewById(R.id.lvWord);
-        adapter = new MyListAdapter(TuDaTraActivity.this, R.layout.list_item, listData);
+        adapter = new MyListAdapter(TuDaTraActivity.this, R.layout.list_item_1, listData);
         lvWord.setAdapter(adapter);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
