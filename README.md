@@ -11,7 +11,7 @@ Phiên bản android yêu cầu là Android 4.4 hay API 19 trở lên
 Nguyễn Văn Minh - 16520746@gm.uit.edu.vn
 * Giảng viên hướng dẫn: Huỳnh Tuấn Anh
 ## Download
-[File cài đặt](https://drive.google.com/file/d/1eltvtRxNsC2PSyOwBCZwhxTEwwVqEi-l/view?usp=sharing)
+[File cài đặt](https://drive.google.com/file/d/1UBkDtACueSeBQRx7hHgeaRqLskix7Yna/view?usp=sharing)
 
 
 
