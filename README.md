@@ -1,4 +1,17 @@
-Inline `code` has `back-ticks around` it.
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+ 
+```python
+s = "Python syntax highlighting"
+print s
+```
+ 
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+```
 
 # DictionaryAtoZ
 Trong việc học tiếng anh, từ vựng đóng một vai trò quan trọng nhưng cũng là phần khó nhằn nhất và cũng là phần gây chán nản nhất đối với người học. Học tiếng anh thì từ điển là phần không thể thiếu, một từ điển tốt, tích hợp nhiều chức năng sẽ giúp người học có hứng thú hơn và học tập hiệu quả hơn.                                                                                                
