@@ -5,7 +5,7 @@ Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đa
    1. [Giao diện Menu lựa chọn](#Giao-diện-Menu-lựa-chọn)
    
 ## Chức năng
-   ### Giao diện Menu lựa chọn  
+   ###      Giao diện Menu lựa chọn  
 ## Yêu cầu thiết bị
 Phiên bản android yêu cầu là Android 4.4 hay API 19 trở lên
 ## Thư viện và công nghệ
