@@ -19,14 +19,24 @@ Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đa
    
 ## Chức năng
    ### Menu lựa chọn
+   ![alt text](https://github.com/minilog/Picture/blob/master/1.Giao%20di%E1%BB%87n%20Menu%20l%E1%BB%B1a%20ch%E1%BB%8Dn.png)
    #### Dịch từ vựng
+   ![alt text](https://github.com/minilog/Picture/blob/master/2.Giao%20di%E1%BB%87n%20D%E1%BB%8Bch%20t%E1%BB%AB%20v%E1%BB%B1ng.png)
    #### Dịch từ giọng nói
+   ![alt text](https://github.com/minilog/Picture/blob/master/3.Giao%20di%E1%BB%87n%20D%E1%BB%8Bch%20t%E1%BB%AB%20gi%E1%BB%8Dng%20n%C3%B3i.png)
    #### Dịch văn bản
+   ![alt text](https://github.com/minilog/Picture/blob/master/4.Giao%20di%E1%BB%87n%20D%E1%BB%8Bch%20v%C4%83n%20b%E1%BA%A3n.png)
    #### Từ yêu thích và Từ đã tra
+   ![alt text](https://github.com/minilog/Picture/blob/master/5.Giao%20di%E1%BB%87n%20T%E1%BB%AB%20y%C3%AAu%20th%C3%ADch.png)
+   ![alt text](https://github.com/minilog/Picture/blob/master/7.%20Giao%20di%E1%BB%87n%20T%E1%BB%AB%20%C4%91%C3%A3%20tra.png)
    ##### Học từ vựng
+   ![alt text](https://github.com/minilog/Picture/blob/master/6.%20Giao%20di%E1%BB%87n%20H%E1%BB%8Dc%20t%E1%BB%AB%20v%E1%BB%B1ng.png)
    #### Tra cứu động từ bất quy tắc
+   ![alt text](https://github.com/minilog/Picture/blob/master/8.%20Giao%20di%E1%BB%87n%20Tra%20c%E1%BB%A9u%20%C4%91%E1%BB%99ng%20t%E1%BB%AB%20b%E1%BA%A5t%20quy%20t%E1%BA%AFc.png)
    ##### Động từ bất quy tắc
+   ![alt text](https://github.com/minilog/Picture/blob/master/9.%20%C4%90%E1%BB%99ng%20t%E1%BB%AB%20b%E1%BA%A5t%20quy%20t%E1%BA%AFc.png)
    #### Cửa-sổ-tra-nhanh
+   ![alt text](https://github.com/minilog/Picture/blob/master/10.%20Giao%20di%E1%BB%87n%20C%E1%BB%ADa%20s%E1%BB%95%20tra%20nhanh.png)
 ## Yêu cầu thiết bị
 Android 4.4 hay API 19 trở lên
 ## Thư viện và công nghệ
@@ -39,5 +49,5 @@ Nguyễn Văn Minh - 16520746@gm.uit.edu.vn
 [File cài đặt](https://drive.google.com/file/d/1UBkDtACueSeBQRx7hHgeaRqLskix7Yna/view?usp=sharing)
 
 
-![alt text](https://github.com/minilog/Picture/blob/master/1.Giao%20di%E1%BB%87n%20Menu%20l%E1%BB%B1a%20ch%E1%BB%8Dn.png)
+
 
