@@ -16,7 +16,7 @@ Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đa
    ### Menu lựa chọn
    #### Dịch từ vựng
    #### Dịch từ giọng nói
-   #### Dịch văn bả
+   #### Dịch văn bản
    #### Từ yêu thích & từ đã tra
    ##### Học từ vựng
    #### Tra cứu động từ bất quy tắc
