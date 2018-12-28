@@ -1,15 +1,11 @@
-   1. [Tìm kiếm bài hát Karaoke Arirang](#tìm-kiếm-bài-hát-Karaoke-Arirang)
-   ### Tìm kiếm bài hát Karaoke Arirang      
-   
-
-
 # DictionaryAtoZ
 Trong việc học tiếng anh, từ vựng đóng một vai trò quan trọng nhưng cũng là phần khó nhằn nhất và cũng là phần gây chán nản nhất đối với người học. Học tiếng anh thì từ điển là phần không thể thiếu, một từ điển tốt, tích hợp nhiều chức năng sẽ giúp người học có hứng thú hơn và học tập hiệu quả hơn.                                                                                                
 Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đang phát triển mạnh mẽ. Điện thoại, máy tính bảng không chỉ để chơi, để lướt Facebook mà còn có thể giúp cho việc học của bạn trở nên hiệu quả và tiết kiệm thời gian hơn bao giờ hết. Do đó nhóm chúng em tạo ra ứng dụng từ điển Dictionary A To Z để hỗ trợ việc học tiếng anh trở nên thuận tiện hơn.
 ## Nội dung
-
-
+   1. [Giao diện Menu lựa chọn](#Giao diện Menu lựa chọn)
+   
 ## Chức năng
+   ### Giao diện Menu lựa chọn  
 ## Yêu cầu thiết bị
 Phiên bản android yêu cầu là Android 4.4 hay API 19 trở lên
 ## Thư viện và công nghệ
