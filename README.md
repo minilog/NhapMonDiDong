@@ -1,9 +1,10 @@
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
 
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
 
 # DictionaryAtoZ
 Trong việc học tiếng anh, từ vựng đóng một vai trò quan trọng nhưng cũng là phần khó nhằn nhất và cũng là phần gây chán nản nhất đối với người học. Học tiếng anh thì từ điển là phần không thể thiếu, một từ điển tốt, tích hợp nhiều chức năng sẽ giúp người học có hứng thú hơn và học tập hiệu quả hơn.                                                                                                
