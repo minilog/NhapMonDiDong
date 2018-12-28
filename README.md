@@ -1,10 +1,16 @@
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
+Three or more...
 
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
 
 # DictionaryAtoZ
 Trong việc học tiếng anh, từ vựng đóng một vai trò quan trọng nhưng cũng là phần khó nhằn nhất và cũng là phần gây chán nản nhất đối với người học. Học tiếng anh thì từ điển là phần không thể thiếu, một từ điển tốt, tích hợp nhiều chức năng sẽ giúp người học có hứng thú hơn và học tập hiệu quả hơn.                                                                                                
