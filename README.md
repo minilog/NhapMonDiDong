@@ -9,7 +9,9 @@ Phiên bản android yêu cầu là Android 4.4 hay API 19 trở lên
 ## Thư viện và công nghệ
 ## Tác giả
 Nguyễn Văn Minh - 16520746@gm.uit.edu.vn
+* Giảng viên hướng dẫn: Huỳnh Tuấn Anh
 ## Download
+
 
 Here's our logo (hover to see the title text):
 
