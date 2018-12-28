@@ -6,20 +6,18 @@ Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đa
       1. [Dịch từ vựng](#Dịch-từ-vựng)
       1. [Dịch từ giọng nói](#Dịch-từ-giọng-nói)
       1. [Dịch văn bản](#Dịch-văn-bản)
-      1. [Từ yêu thích](#Từ-yêu-thích)
-      1. [Từ đã tra](#Từ-đã-tra)
+      1. [Từ yêu thích & từ đã tra](#Từ-yêu-thích-&-Từ-đã-tra)
          1. [Học từ vựng](#Học-từ-vưng)
       1. [Tra cứu động từ bất quy tắc](#Tra-cứu-động-từ-bất-quy-tắc)
          1. [Động từ bất quy_tắc](#Động-từ-bất-quy-tắc)
       1. [Cửa-sổ-tra-nhanh](#Cửa-sổ-tra-nhanh)
    
 ## Chức năng
-      ### Menu lựa chọn
-      #### Dịch từ vựng
-      #### Dịch từ giọng nói
+   ### Menu lựa chọn
+   #### Dịch từ vựng
+   #### Dịch từ giọng nói
    #### Dịch văn bả
-   #### Từ yêu thích
-   #### Từ đã tra
+   #### Từ yêu thích & từ đã tra
    ##### Học từ vựng
    #### Tra cứu động từ bất quy tắc
    ##### Động từ bất quy_tắc
