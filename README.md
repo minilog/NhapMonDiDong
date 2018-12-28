@@ -4,3 +4,6 @@
 
 * This is meant to be an example
 * Markdownis really fast
+
+## Link Example
+[CodeTime](https://www.codetime.io)
