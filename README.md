@@ -2,7 +2,7 @@
 Trong việc học tiếng anh, từ vựng đóng một vai trò quan trọng nhưng cũng là phần khó nhằn nhất và cũng là phần gây chán nản nhất đối với người học. Học tiếng anh thì từ điển là phần không thể thiếu, một từ điển tốt, tích hợp nhiều chức năng sẽ giúp người học có hứng thú hơn và học tập hiệu quả hơn.                                                                                                
 Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đang phát triển mạnh mẽ. Điện thoại, máy tính bảng không chỉ để chơi, để lướt Facebook mà còn có thể giúp cho việc học của bạn trở nên hiệu quả và tiết kiệm thời gian hơn bao giờ hết. Do đó nhóm chúng em tạo ra ứng dụng từ điển Dictionary A To Z để hỗ trợ việc học tiếng anh trở nên thuận tiện hơn.
 # Nội dung
-[Chức năng](#Chức-năng)
+1. [Chức năng](#Chức-năng)
    1. [Menu lựa chọn](#Menu-lựa-chọn)
       1. [Dịch từ vựng](#Dịch-từ-vựng)
       1. [Dịch từ giọng nói](#Dịch-từ-giọng-nói)
@@ -12,10 +12,10 @@ Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đa
       1. [Tra cứu động từ bất quy tắc](#Tra-cứu-động-từ-bất-quy-tắc)
          1. [Động từ bất quy tắc](#Động-từ-bất-quy-tắc)
       1. [Cửa-sổ-tra-nhanh](#Cửa-sổ-tra-nhanh)
-[Yêu cầu thiết bị](#Yêu-cầu-thiết-bị)
-[Thư viện và công nghệ](#Thư-viện-và-công-nghệ)
-[Tác giả](#Tác-giả)
-[Tải về](#Tải-về)
+1. [Yêu cầu thiết bị](#Yêu-cầu-thiết-bị)
+1. [Thư viện và công nghệ](#Thư-viện-và-công-nghệ)
+1. [Tác giả](#Tác-giả)
+1. [Tải về](#Tải-về)
    
 ## Chức năng
    ### Menu lựa chọn
