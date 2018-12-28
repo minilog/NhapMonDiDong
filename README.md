@@ -6,7 +6,7 @@ Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đa
       1. [Dịch từ vựng](#Dịch-từ-vựng)
       1. [Dịch từ giọng nói](#Dịch-từ-giọng-nói)
       1. [Dịch văn bản](#Dịch-văn-bản)
-      1. [Từ yêu thích & Từ đã tra](#Từ-yêu-thích&Từ-đã-tra)
+      1. [Từ yêu thích và Từ đã tra](#Từ-yêu-thích-và-Từ-đã-tra)
          1. [Học từ vựng](#Học-từ-vựng)
       1. [Tra cứu động từ bất quy tắc](#Tra-cứu-động-từ-bất-quy-tắc)
          1. [Động từ bất quy tắc](#Động-từ-bất-quy-tắc)
@@ -17,7 +17,7 @@ Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đa
    #### Dịch từ vựng
    #### Dịch từ giọng nói
    #### Dịch văn bản
-   #### Từ yêu thích & Từ đã tra
+   #### Từ yêu thích và Từ đã tra
    ##### Học từ vựng
    #### Tra cứu động từ bất quy tắc
    ##### Động từ bất quy tắc
