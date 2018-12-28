@@ -21,7 +21,7 @@ Nguyễn Văn Minh - 16520746@gm.uit.edu.vn
 Here's our logo (hover to see the title text):
 
 Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/minilog/Picture/blob/master/1.Giao%20di%E1%BB%87n%20Menu%20l%E1%BB%B1a%20ch%E1%BB%8Dn.png "Logo Title Text 1")
 
 Reference-style: 
 ![alt text][logo]
