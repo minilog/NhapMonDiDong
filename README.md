@@ -1,7 +1,6 @@
    1. [Tìm kiếm bài hát Karaoke Arirang](#tìm-kiếm-bài-hát-Karaoke-Arirang)
    ### Tìm kiếm bài hát Karaoke Arirang      
    
-   ![database](https://user-images.githubusercontent.com/35907949/50275283-93dc1380-0471-11e9-9ee6-a31bc9b4d77d.PNG)
 
 
 # DictionaryAtoZ
@@ -23,5 +22,5 @@ Nguyễn Văn Minh - 16520746@gm.uit.edu.vn
 [File cài đặt](https://drive.google.com/file/d/1UBkDtACueSeBQRx7hHgeaRqLskix7Yna/view?usp=sharing)
 
 
-![alt text](https://github.com/minilog/Picture/blob/master/1.Giao%20di%E1%BB%87n%20Menu%20l%E1%BB%B1a%20ch%E1%BB%8Dn.png "Logo Title Text 1")
+![alt text](https://github.com/minilog/Picture/blob/master/1.Giao%20di%E1%BB%87n%20Menu%20l%E1%BB%B1a%20ch%E1%BB%8Dn.png)
 
