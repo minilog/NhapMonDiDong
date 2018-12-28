@@ -7,9 +7,9 @@ Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đa
       1. [Dịch từ giọng nói](#Dịch-từ-giọng-nói)
       1. [Dịch văn bản](#Dịch-văn-bản)
       1. [Từ yêu thích & từ đã tra](#Từ-yêu-thích-&-Từ-đã-tra)
-         1. [Học từ vựng](#Học-từ-vưng)
+         1. [Học từ vựng](#Học-từ-vựng)
       1. [Tra cứu động từ bất quy tắc](#Tra-cứu-động-từ-bất-quy-tắc)
-         1. [Động từ bất quy_tắc](#Động-từ-bất-quy-tắc)
+         1. [Động từ bất quy tắc](#Động-từ-bất-quy-tắc)
       1. [Cửa-sổ-tra-nhanh](#Cửa-sổ-tra-nhanh)
    
 ## Chức năng
@@ -17,10 +17,10 @@ Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đa
    #### Dịch từ vựng
    #### Dịch từ giọng nói
    #### Dịch văn bản
-   #### Từ yêu thích & từ đã tra
+   #### Từ yêu thích & Từ đã tra
    ##### Học từ vựng
    #### Tra cứu động từ bất quy tắc
-   ##### Động từ bất quy_tắc
+   ##### Động từ bất quy tắc
    #### Cửa-sổ-tra-nhanh
 ## Yêu cầu thiết bị
 Phiên bản android yêu cầu là Android 4.4 hay API 19 trở lên
