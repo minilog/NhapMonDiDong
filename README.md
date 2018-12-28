@@ -3,7 +3,7 @@ Trong việc học tiếng anh, từ vựng đóng một vai trò quan trọng n
 Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đang phát triển mạnh mẽ. Điện thoại, máy tính bảng không chỉ để chơi, để lướt Facebook mà còn có thể giúp cho việc học của bạn trở nên hiệu quả và tiết kiệm thời gian hơn bao giờ hết. Do đó nhóm chúng em tạo ra ứng dụng từ điển Dictionary A To Z để hỗ trợ việc học tiếng anh trở nên thuận tiện hơn.
 ## Nội dung
    1. [Menu lựa chọn](#Menu-lựa-chọn)
-      1. [Dịch từ vựng](#Dịch-từ-vựng)
+      2. [Dịch từ vựng](#Dịch-từ-vựng)
       1. [Dịch từ giọng nói](#Dịch-từ-giọng-nói)
       1. [Dịch văn bản](#Dịch-văn-bản)
       1. [Từ yêu thích](#Từ-yêu-thích)
