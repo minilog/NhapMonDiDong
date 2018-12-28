@@ -1,6 +1,4 @@
-$-b \pm \sqrt{b^2 - 4ac} \over 2a$
-$x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}$
-$\forall x \in X, \quad \exists y \leq \epsilon$
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 # DictionaryAtoZ
 Trong việc học tiếng anh, từ vựng đóng một vai trò quan trọng nhưng cũng là phần khó nhằn nhất và cũng là phần gây chán nản nhất đối với người học. Học tiếng anh thì từ điển là phần không thể thiếu, một từ điển tốt, tích hợp nhiều chức năng sẽ giúp người học có hứng thú hơn và học tập hiệu quả hơn.                                                                                                
