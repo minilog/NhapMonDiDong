@@ -5,10 +5,10 @@ Xu hướng sử dụng các thiết bị công nghệ cao trong học tập đa
 
 ## Chức năng
 ## Yêu cầu thiết bị
-Phiên bản android yêu cầu là Android 4.4 hay API 19 trở lên.
+Phiên bản android yêu cầu là Android 4.4 hay API 19 trở lên
 ## Thư viện và công nghệ
-Ngôn ngữ : Java.
-Cơ sở dữ liệu: Text.
+* Ngôn ngữ : Java                                                                                                                       
+* Cơ sở dữ liệu: Text
 ## Tác giả
 Nguyễn Văn Minh - 16520746@gm.uit.edu.vn
 * Giảng viên hướng dẫn: Huỳnh Tuấn Anh
